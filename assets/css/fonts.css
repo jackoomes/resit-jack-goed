@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "Nobel-Regular";
+  src: url("assets/fonts/Nobel-Regular.ttf") format("truetype"),
+       /* url("../fonts/ABCRepro-Medium-Trial.woff2") format("woff2"),
+       url("../fonts/ABCRepro-Medium-Trial.woff") format("woff"); */
+}
+

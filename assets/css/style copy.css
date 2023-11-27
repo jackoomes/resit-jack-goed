@@ -1,0 +1,562 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  /* overflow: auto; */
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+/* header {
+  
+  margin-left: 2vw;
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  
+}
+
+h1 {
+  font-family: "Nobel-Regular", sans-serif;
+  font-size: 50pt;
+  text-align: center;
+} */
+/* .prefacebox {
+  width: 100vw;
+  
+  height: calc(20 * 2 * 6vw);
+
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  overflow-y: scroll;
+ 
+} */
+
+.gridcontainer {
+  padding: 1vw;
+  display: grid;
+
+  /* grid-row: 8fr; */
+  grid-template-columns: repeat(16, 1fr);
+  /* grid-column-gap: 1vw; */
+  grid-row-gap: 0.8vw;
+  grid-template-rows: repeat(auto-fill, minmax(6vw, 5fr));
+  align-items: baseline;
+  /* z-index: 3; */
+
+  /* position: absolute;
+  left: 20vw; 
+  
+  width: 60vw;
+  height: 400vh;*/
+
+  position: relative;
+  margin-inline: auto;
+
+  width: clamp(600px, 60vw, 100%);
+  /* height: calc(20 * 4 * 6vw); */
+  height: auto;
+
+  background-color: brown;
+}
+
+h1 {
+  font-family: nobel-regular;
+  font-size: 3.3vw;
+  grid-column: 1 / span 16;
+  margin-bottom: 20vh;
+  justify-content: center;
+}
+
+.baselinewe {
+  grid-column: 3 / span 2;
+  grid-row: 2;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  /* z-index: 3; */
+}
+
+.we {
+  /* grid-column: 2 / span 2; */
+  font-size: 9vw;
+  line-height: 0.8;
+}
+
+.baselinemust {
+  grid-column: 7 / span 8;
+  top: 27vh;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  /* z-index: 3; */
+}
+
+.must {
+  /* grid-column: 2 / span 4; */
+  scale: 2;
+}
+
+.must img {
+  /* max-width: 50vw; */
+}
+
+.baselinebecome {
+  grid-column: 8 / span 16;
+  grid-row: 7;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  /* z-index: 3; */
+}
+.become {
+  /* grid-column: 3 / span 4; */
+  font-size: 2vw;
+}
+.baselineidealists {
+  grid-column: 8 / span 11;
+  grid-row: 8;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  /* z-index: 3; */
+}
+.idealists {
+  /* grid-column: 4 / span 5; */
+  font-size: 2vw;
+}
+
+.baselinedsag {
+  grid-column: 8 / span 10;
+  grid-row: 9;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+}
+
+.dsag {
+  font-size: 2vw;
+  line-height: 4rem;
+}
+
+.baselinegvsc {
+  grid-column: 8 / span 10;
+  grid-row: 10;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+}
+
+.gvsc {
+  font-size: 2vw;
+  line-height: 4rem;
+}
+
+.baselineviolence {
+  grid-column: 6 / span 10;
+  grid-row: 11;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+}
+
+.violence {
+  font-size: 4vw;
+}
+
+.baselinedisassemblyone {
+  grid-column: 4 / span 10;
+  grid-row: 12;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+}
+
+.disassemblyone {
+  font-size: 5vw;
+}
+
+.baselinedisassemblytwo {
+  grid-column: 4 / span 10;
+  grid-row: 13;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+}
+
+.disassemblytwo {
+  font-size: 5vw;
+}
+.baselinedisassemblythree {
+  grid-column: 4 / span 10;
+  grid-row: 14;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+}
+
+.disassemblythree {
+  font-size: 5vw;
+}
+.baselinedisassemblyfour {
+  grid-column: 4 / span 10;
+  grid-row: 15;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+}
+
+.disassemblyfour {
+  font-size: 5vw;
+}
+
+.baselineexplosion {
+  grid-column: 1 / span 10;
+  grid-row: 16;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+}
+
+.explosion {
+  font-size: 6.5vw;
+}
+.baselinemanual {
+  grid-column: 2 / span 10;
+  grid-row: 17;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+}
+
+.manual {
+  font-size: 5vw;
+}
+.baselineimplosion {
+  grid-column: 1 / span 10;
+  grid-row: 18;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+}
+
+.implosion {
+  font-size: 6.5vw;
+}
+.baselineexpansion {
+  grid-column: 2 / span 10;
+  grid-row: 19;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+}
+
+.expansion {
+  font-size: 7.5vw;
+}
+.baselinehitandfall {
+  grid-column: 10 / span 10;
+  grid-row: 21;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+}
+
+.hitandfall {
+  font-size: 3.5vw;
+}
+
+.baselinefestumfluxorum {
+  grid-column: 2 / span 10;
+  grid-row: 22;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+}
+
+.festumfluxorum {
+  font-size: 7.5vw;
+  line-height: 0.7;
+}
+
+.baselinepiano {
+  grid-column: 1 / span 16;
+  grid-row: 25;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+}
+
+.piano {
+  font-size: 5.5vw;
+  line-height: 0.7;
+}
+
+.baselineclosedpiano {
+  grid-column: 3 / span 16;
+  grid-row: 27;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+}
+
+.closedpiano {
+  font-size: 3.5vw;
+  line-height: 0.7;
+}
+
+.baselinefire {
+  grid-column: 5 / span 16;
+  grid-row: 29;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+}
+
+.fire {
+  font-size: 3.5vw;
+  line-height: 0.7;
+}
+
+.baselineself {
+  grid-column: 2 / span 16;
+  grid-row: 31;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+}
+
+.self {
+  font-size: 4.5vw;
+  line-height: 0.7;
+}
+
+.baselinewarone {
+  grid-column: 6 / span 16;
+  grid-row: 32;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+}
+.warone {
+  font-size: 10.5vw;
+}
+
+.baselinewartwo {
+  grid-column: 6 / span 16;
+  grid-row: 33;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+}
+.wartwo {
+  font-size: 12.5vw;
+}
+.baselinegustav {
+  grid-column: 5 / span 8;
+  top: 195vh;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+}
+
+.gustav {
+  /* grid-column: 2 / span 4; */
+  scale: 2;
+}
+
+.baselinebody {
+  grid-column: 5 / span 16;
+  grid-row: 34;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+}
+.body {
+  font-size: 6.5vw;
+}
+.baselineconclusion {
+  grid-column: 1 / span 16;
+  grid-row: 36;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+}
+.conclusion {
+  font-size: 9vw;
+}
+
+.we,
+.become,
+.idealists,
+.dsag,
+.gvsc,
+.violence,
+.disassemblyone,
+.disassemblytwo,
+.disassemblythree,
+.disassemblyfour,
+.explosion,
+.manual,
+.implosion,
+.expansion,
+.hitandfall,
+.festumfluxorum,
+.piano,
+.closedpiano,
+.fire,
+.self,
+.warone,
+.wartwo,
+.body,
+.conclusion {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif, Times, serif, Helvetica, sans-serif;
+  position: relative;
+  /* line-height: 1.1; */
+  /* z-index: 3; */
+  pointer-events: auto;
+}
+
+/* .we:hover,
+.must:hover,
+.become:hover,
+.idealists:hover,
+.dsag:hover,
+.gvsc:hover,
+.violence:hover,
+.disassemblyone:hover,
+.disassemblytwo:hover,
+.disassemblythree:hover,
+.disassemblyfour:hover,
+.explosion:hover,
+.manual:hover,
+.implosion:hover,
+.expansion:hover,
+.hitandfall:hover,
+.festumfluxorum:hover,
+.piano:hover,
+.closedpiano:hover,
+.fire:hover,
+.self:hover,
+.warone:hover,
+.wartwo:hover,
+.body:hover,
+.conclusion:hover {
+  text-decoration: underline;
+} */
+.gridcontainer > div > div:hover {
+  text-decoration: underline;
+
+}
+.wehover {
+  display: flex;
+  visibility: hidden;
+  position: fixed;
+  top: 10vh;
+  left: 50vw;
+  z-index: 1;
+  /* opacity: 0.8; */
+}
+
+.musthover {
+  display: flex;
+  visibility: hidden;
+  position: fixed;
+  /* z-index: 1; */
+  /* opacity: 0.8; */
+}
+.becomehover {
+  display: flex;
+  visibility: hidden;
+  position: fixed;
+  /* z-index: 1; */
+  /* opacity: 0.8; */
+}
+.idealistshover {
+  display: flex;
+  visibility: hidden;
+  position: fixed;
+  /* z-index: 1; */
+  /* opacity: 0.8; */
+}
+div[class$="hover"] {
+  display: flex;
+  visibility: hidden;
+  position: fixed;
+  background: red;
+}
+/* .dsaghover,
+.gvschover,
+.violencehover,
+.disassemblyonehover,
+.disassemblytwohover,
+.disassemblythreehover,
+.disassemblyfourhover,
+.explosionhover,
+.manualhover,
+.implosionhover,
+.expansionhover,
+.hitandfallhover,
+.festumfluxorumhover,
+.pianohover,
+.closedpianohover,
+.firehover,
+.selfhover,
+.waronehover,
+.wartwohover,
+.gustavhover,
+.bodyhover,
+.conclusionhover,
+.dickhover {
+  display: flex;
+  visibility: hidden;
+  position: fixed; */
+  /* z-index: 1; */
+  /* opacity: 0.8; */
+/* } */
+
+.paragraphhover {
+  position: relative;
+  padding: 1rem;
+  background: white;
+}
+.paragraphhover .close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+  aspect-ratio: 1;
+  line-height: 1.5;
+  color: white;
+  background: red;
+  border-radius: 50%;
+}
+
+.paragraph {
+  font-family: nobel-regular;
+}
+
+.paragraphhover > *:last-child {
+  aspect-ratio: 2 / 3;
+  overflow-y: auto;
+  display: block;
+}
+
+.dick {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.dickhover {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+}
